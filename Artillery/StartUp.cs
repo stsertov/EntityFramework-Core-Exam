@@ -93,7 +93,6 @@
             File.WriteAllText(outputPath, entityOutput.TrimEnd());
         }
 
-
         private static string GetProjectDirectory()
         {
             var currentDirectory = Directory.GetCurrentDirectory();
