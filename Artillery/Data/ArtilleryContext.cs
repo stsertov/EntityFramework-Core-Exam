@@ -10,7 +10,6 @@
         public ArtilleryContext(DbContextOptions options)
             : base(options) { }
 
-
         public DbSet<Country> Countries { get; set; }
 
         public DbSet<Manufacturer> Manufacturers { get; set; }
@@ -51,7 +50,6 @@
                 .HasForeignKey("GunId")
                 .OnDelete(DeleteBehavior.Restrict);
             });
-
         }
     }
 }

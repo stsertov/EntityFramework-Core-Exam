@@ -21,7 +21,6 @@
                 .OrderByDescending(g => g.GunWeight)
                 .ToArray()));
 
-
             CreateMap<Gun, XGunExportXmlDto>()
                 .ForMember(x => x.Manufacturer, y => y.MapFrom(g => g.Manufacturer.ManufacturerName))
                 .ForMember(x => x.GunType, y => y.MapFrom(g => g.GunType.ToString()))
